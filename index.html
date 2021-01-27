@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="animated-event-calendar/dist/simple-calendar.css">
+  <script src="bootstrap/jquery.min.js"></script>
+  <script src="bootstrap/bootstrap.min.js"></script>
+  <script src="fontawesome/fontawesome.js"></script>
+  <script src="jquery/jquery.min.js"></script>
+  <script src="animated-event-calendar/dist/jquery.simple-calendar.js"></script>
+</head>
+
+<body>
+  <div class="main">
+    <section class="left">
+      <div class="logo-icon"></div>
+      <div class="menu mt25">
+        <ul>
+          <li><img src="img/menu-Dash.png" width="25px"><a href="">Dashboard</a></li>
+          <li id="manage-main"><img src="img/menu-manage.png" width="25px"><a href="">Manage</a>
+            <ul id="mange-setect">
+              <li><a href="">Course</a></li>
+              <li><a href="">Team</a></li>
+              <li><a href="">Users</a></li>
+            </ul>
+          </li>
+          <li><img src="img/menu-learn.png" width="20px"><a href="">Learning Page</a></li>
+          <li><img src="img/menu-report.png" width="20px"><a href="">Reports</a></li>
+          <li><img src="img/menu-announcement.png" width="25px"><a href="">Announcements</a></li>
+        </ul>
+      </div>
+    </section>
+    <div class="right">
+      <header class="head-top">
+        <div class="profile-box">
+          <div class="profile-img">
+            <img src="img/useravatar.png">
+          </div>
+          <div class="user-name">
+            <h2>Hi Admin</h2>
+            <span>Super Admin</span>
+          </div>
+        </div>
+        <div class="sitting">
+          <span class="">Sign-out</span>
+          <i class="fa fa-cog"></i>
+
+        </div>
+      </header>
+      <section class="main-container mt25">
+        <div class="image-box">
+          <div class="dash-img">
+            <!-- <img src="img/dash.jpg"> -->
+          </div>
+          <div class="bread-crum">
+            <i class="fa fa-home"></i>
+            <span>Dashboard</span>
+          </div>
+        </div>
+
+        <div class="dash-detail mt10">
+          <!-- <div class="col-sm-12 col-md-12 col-lg-12"></div> -->
+          <div class="col-sm-8 col-md-8 col-lg-8 pl0 pr0 m-t-24">
+            <div class="head-dash">Dashboard Details</div>
+            <div class="col-sm-3 col-md-3 col-lg-3 pl0 pr10">
+              <div class="module-box">
+                <div class="main-img-box">
+                  <span class="num blue-col">81</span>
+                  <span class="num-text">Modules</span>
+                  <img src="img/module.png">
+                </div>
+                <div class="btn-box">
+                  <div class="btn-left">
+                    <a href="">
+                      <i class="fa fa-plus"></i>
+                      <span>Add Course</span>
+                    </a>
+                  </div>
+
+                  <div class="btn-right">
+                    <a href="">
+                      <i class="fa fa-cog"></i>
+                      <span>Manage Course</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3 pl0 pr10">
+              <div class="module-box">
+                <div class="main-img-box">
+                  <span class="num red-col">54</span>
+                  <span class="num-text">Company</span>
+                  <img src="img/company.png">
+                </div>
+                <div class="btn-box">
+                  <div class="btn-left">
+                    <a href="">
+                      <i class="fa fa-plus"></i>
+                      <span>Add Course</span>
+                    </a>
+                  </div>
+
+                  <div class="btn-right">
+                    <a href="">
+                      <i class="fa fa-cog"></i>
+                      <span>Manage Course</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3 pl0 pr10">
+              <div class="module-box">
+                <div class="main-img-box">
+                  <span class="num orange-col">12</span>
+                  <span class="num-text">Course Group</span>
+                  <img src="img/course.png" style="padding-top: 45px;">
+                </div>
+                <div class="btn-box">
+                  <div class="btn-left">
+                    <a href="">
+                      <i class="fa fa-plus"></i>
+                      <span>Add Course</span>
+                    </a>
+                  </div>
+
+                  <div class="btn-right">
+                    <a href="">
+                      <i class="fa fa-cog"></i>
+                      <span>Manage Course</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3 pl0">
+              <div class="module-box">
+                <div class="main-img-box">
+                  <span class="num green-col">530</span>
+                  <span class="num-text">Users</span>
+                  <img src="img/user.png">
+                </div>
+                <div class="btn-box">
+                  <div class="btn-left">
+                    <a href="">
+                      <i class="fa fa-plus"></i>
+                      <span>Add Course</span>
+                    </a>
+                  </div>
+                  <div class="btn-right">
+                    <a href="">
+                      <i class="fa fa-cog"></i>
+                      <span>Manage Course</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4 plr0 mt-06">
+            <div class="calander-box">
+              <div class="cal-head">
+                <div class="event-btn">
+                  <i class="fa fa-caret-down"></i>
+                  <span>Event</span>
+                </div>
+                <div class="request-btn">
+                  <span>Request</span>
+                </div>
+              </div>
+              <div class="cal-main">
+                <div id="container" class="calendar-container"></div>
+              </div>
+              <a href="#" class="showbtn">Show all</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-main">
+      <p>Connect with JLABS</p>
+      <ul>
+        <li>
+          <a href="">
+            <img src="img/email.png">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/contact.png">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/comment.png">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+<script>
+  $(document).ready(function () {
+    $("#container").simpleCalendar({
+    });
+
+    $("#manage-main").click(function () {
+      $("#mange-setect").toggle();
+    });
+  });
+</script>
+
+</html>

@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.logo-icon{
+    background-image: url(img/logo.jpg);
+    background-repeat: no-repeat;
+    width: 222px;
+    padding: 64px;
+    padding-bottom: 0;
+    background-size: 217px;
+}
+
+.profile-img img{
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    border: 1px solid #51c9ee;
+}
+.main {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+.manu ul{
+    list-style: none;
+}
+.left {
+    width: 20%;
+}
+.right {
+    width: 80%;
+}
+.profile-box {
+    display: flex;
+}
+.head-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.dash-img{
+    background-image: url("img/dash.jpg");
+    height: 232px;
+    background-size: cover;
+    background-position: center bottom;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.bread-crum {
+    background-color: #dadada;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 7px;
+}
+.dash-detail {
+    width: 100%;
+    float: left;
+}
+.module-box {
+    background: #fafafa;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    /* box-shadow: 0 1px 1px 1px #cccccc; */
+}
+.head-dash{
+    width: 100%;
+    padding: 10px;
+    color: #d2d2d2;
+    font-weight: bold;
+    font-size: 20px;
+}
+.pl0{
+    padding-left: 0 !important;
+}
+.num {
+    font-size: 20px;
+    font-weight: 600;
+}
+.module-box img{
+    width: 55px;
+    padding-top: 30px;
+}
+.main-img-box {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.btn-box {
+    display: flex;
+    margin-top: 20px;
+}
+.btn-left, .btn-right {
+    width: 50%;
+    float: left;
+    background-color: #08bcf1;
+    padding: 3px;
+    line-height: 16px;
+  
+    margin-right: 3px;
+    border-radius: 5px;
+}
+.btn-right{
+    margin-right: 0;
+    background-color: #62656a;
+}
+.btn-left span, .btn-right span {
+    font-size: 12px;
+    width: 44px;
+    float: right;
+}
+.btn-left i, .btn-right i{
+margin-top: 9px;
+}
+.btn-left a, .btn-right a, .btn-left a, .btn-right a, .btn-left a:hover, .btn-right a:hover{
+    color:#fff;
+    text-decoration: none;
+}
+.mt10{
+margin-top:10px;
+}
