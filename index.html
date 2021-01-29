@@ -20,7 +20,7 @@
       <div class="menu mt25">
         <ul>
           <li><img src="img/menu-Dash.png"><a href="">Dashboard</a></li>
-          <li id="manage-main"><img src="img/menu-manage.png"><a>Manage</a>
+          <li id="manage-main"><img src="img/menu-manage.png"><a href="javascript:void(0);">Manage</a>
             <ul id="mange-setect">
               <li><a href="">Course</a></li>
               <li><a href="">Team</a></li>
@@ -49,6 +49,7 @@
           <i class="fa fa-cog" id="sitting-btn"></i>
 
           <ul id="profile-menu">
+            <span class="arrow"></span>
             <!-- <i class="fa fa-caret-up"></i> -->
             <li><a href="">View Profile</a></li>
             <li><a href="">Edit Profile</a></li>
@@ -78,7 +79,7 @@
                 <div class="main-img-box">
                   <span class="num blue-col">81</span>
                   <span class="num-text">Modules</span>
-                  <img src="img/module.png">
+                 <span class="img-box pt4"> <img src="img/module.png"></span>
                 </div>
                 <div class="btn-box">
                   <div class="btn-left">
@@ -102,7 +103,7 @@
                 <div class="main-img-box">
                   <span class="num red-col">54</span>
                   <span class="num-text">Company</span>
-                  <img src="img/company.png">
+                  <span class="img-box"><img src="img/company.png"></span>
                 </div>
                 <div class="btn-box">
                   <div class="btn-left">
@@ -126,7 +127,7 @@
                 <div class="main-img-box">
                   <span class="num orange-col">12</span>
                   <span class="num-text">Course Group</span>
-                  <img src="img/course.png" style="padding-top: 45px;">
+                  <span class="img-box pt17"><img src="img/course.png"></span>
                 </div>
                 <div class="btn-box">
                   <div class="btn-left">
@@ -150,7 +151,7 @@
                 <div class="main-img-box">
                   <span class="num green-col">530</span>
                   <span class="num-text">Users</span>
-                  <img src="img/user.png">
+                  <span class="img-box pt2"><img src="img/user.png"></span>
                 </div>
                 <div class="btn-box">
                   <div class="btn-left">
@@ -172,16 +173,18 @@
           <div class="col-sm-4 col-md-4 col-lg-4 plr0 mt-06">
             <div class="calander-box">
               <div class="cal-head">
-                <div class="event-btn">
-                  <i class="fa fa-caret-down"></i>
+                <button class="event-btn tablinks active" onclick="openbtn(event, 'calander1')">
+                  <!-- <i class="fa fa-caret-down"></i> -->
                   <span>Event</span>
-                </div>
-                <div class="request-btn">
+                </button>
+                <button class="request-btn tablinks" onclick="openbtn(event, 'request')">
                   <span>Request</span>
-                </div>
+                </button>
               </div>
               <div class="cal-main">
-                <div id="container" class="calendar-container"></div>
+               <div id="calander1" class="tabcontent  "> <div id="container" class="calendar-container"></div></div>
+                <!-- <div id="calander1" class="tabcontent">calander</div> -->
+                <div id="request" class="tabcontent">Request</div>
               </div>
               <a href="#" class="showbtn">Show all</a>
             </div>
@@ -214,6 +217,19 @@
   </footer>
 </body>
 <script>
+  function openbtn(evt, tabbtn) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabbtn).style.display = "block";
+  evt.currentTarget.className += " active";
+}
   $(document).ready(function () {
     $("#container").simpleCalendar({
     });
@@ -227,6 +243,8 @@
 
 
   });
+
+ 
 </script>
 
 </html>
