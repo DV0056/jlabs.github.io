@@ -1,16 +1,16 @@
-<!DOCTYPE html>
 <html>
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>jlabs</title>
+
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="animated-event-calendar/dist/simple-calendar.css">
-  <script src="bootstrap/jquery.min.js"></script>
-  <script src="bootstrap/bootstrap.min.js"></script>
-  <script src="fontawesome/fontawesome.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <script src="jquery/jquery.min.js"></script>
-  <script src="animated-event-calendar/dist/jquery.simple-calendar.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/simple-calendar.css">
+  <script src="jquery/bootstrap.min.js"></script>
+  <script src="jquery/jquery.simple-calendar.min.js"></script>
 </head>
 
 <body>
@@ -19,17 +19,17 @@
       <div class="logo-icon"></div>
       <div class="menu mt25">
         <ul>
-          <li><img src="img/menu-Dash.png" width="25px"><a href="">Dashboard</a></li>
-          <li id="manage-main"><img src="img/menu-manage.png" width="25px"><a href="">Manage</a>
+          <li><img src="img/menu-Dash.png"><a href="">Dashboard</a></li>
+          <li id="manage-main"><img src="img/menu-manage.png"><a>Manage</a>
             <ul id="mange-setect">
               <li><a href="">Course</a></li>
               <li><a href="">Team</a></li>
               <li><a href="">Users</a></li>
             </ul>
           </li>
-          <li><img src="img/menu-learn.png" width="20px"><a href="">Learning Page</a></li>
-          <li><img src="img/menu-report.png" width="20px"><a href="">Reports</a></li>
-          <li><img src="img/menu-announcement.png" width="25px"><a href="">Announcements</a></li>
+          <li><img src="img/menu-learn.png" class="learn-img"><a href="">Learning Page</a></li>
+          <li><img src="img/menu-report.png" class="report-img"><a href="">Reports</a></li>
+          <li><img src="img/menu-announcement.png"><a href="">Announcements</a></li>
         </ul>
       </div>
     </section>
@@ -46,7 +46,15 @@
         </div>
         <div class="sitting">
           <span class="">Sign-out</span>
-          <i class="fa fa-cog"></i>
+          <i class="fa fa-cog" id="sitting-btn"></i>
+
+          <ul id="profile-menu">
+            <!-- <i class="fa fa-caret-up"></i> -->
+            <li><a href="">View Profile</a></li>
+            <li><a href="">Edit Profile</a></li>
+            <li><a href="">Change Password</a></li>
+            <li><a href="">Logout</a></li>
+          </ul>
 
         </div>
       </header>
@@ -61,9 +69,9 @@
           </div>
         </div>
 
-        <div class="dash-detail mt10">
+        <div class="dash-detail mt25">
           <!-- <div class="col-sm-12 col-md-12 col-lg-12"></div> -->
-          <div class="col-sm-8 col-md-8 col-lg-8 pl0 pr0 m-t-24">
+          <div class="col-sm-8 col-md-8 col-lg-8 pl0 pr0">
             <div class="head-dash">Dashboard Details</div>
             <div class="col-sm-3 col-md-3 col-lg-3 pl0 pr10">
               <div class="module-box">
@@ -213,6 +221,12 @@
     $("#manage-main").click(function () {
       $("#mange-setect").toggle();
     });
+    $("#sitting-btn").click(function () {
+      $("#profile-menu").toggle();
+    });
+
+
   });
 </script>
+
 </html>

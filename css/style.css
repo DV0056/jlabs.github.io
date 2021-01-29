@@ -105,7 +105,7 @@
     width: 50%;
     float: left;
     background-color: #08bcf1;
-    padding: 3px;
+    padding: 4px;
     line-height: 16px;
   
     margin-right: 3px;
@@ -123,12 +123,15 @@
 .btn-left i, .btn-right i{
 margin-top: 9px;
 }
-.btn-left a, .btn-right a, .btn-left a, .btn-right a, .btn-left a:hover, .btn-right a:hover{
+.btn-left a, .btn-right a, .btn-left a, .btn-right a, .btn-left a:hover, .btn-right a:hover, .showbtn:hover{
     color:#fff;
     text-decoration: none;
 }
 .mt10{
 margin-top:10px;
+}
+.mt25{
+    margin-top: 25px;
 }
 
 .cal-head {
@@ -153,21 +156,21 @@ margin-top:10px;
     border: 1px solid #d2d1d1;
     border-radius: 5px;
     position: relative;
-    height: 285px;
+    height: 270px;
 }
 .cal-main {
     width: 100%;
-    padding: 10px;
+    padding: 20px 10px 0 10px;
 }
 .calendar {
     border: 1px solid #dcdcdc;
     display: flex;
     flex-direction: column;
-    border-bottom: none;
-    height: 193px;
+    height: 165px;
 }
 .calendar table tbody tr td{
     border:1px solid #dcdcdc;
+    font-size: 14px;
 }
 .calendar table{
     text-align: center;
@@ -200,6 +203,7 @@ margin-top:10px;
     position: absolute;
     right: 9px;
     padding: 3px 7px;
+    margin-top: 7px;
 }
 .m-t-24{
     margin-top:24px;
@@ -211,6 +215,7 @@ margin-top:10px;
 .sitting {
     margin-top: 16px;
     color: #868b8e;
+    position: relative;
 }
 .sitting span {
     margin-right:6px;
@@ -227,15 +232,16 @@ margin-top:10px;
     font-size: 12px;
     color: #d2d2d2;
 }
-.menu a:hover{
-    text-decoration: none;
-}
+
 .menu a{
     color: #9a9a9a;
     font-size: 14px;
     font-weight: bold;
     line-height: 40px;
     padding-left: 10px;
+}
+#profile-menu a{
+    color: #9a9a9a;
 }
 footer{
     background-color: #f6f7fb;
@@ -291,7 +297,7 @@ footer{
 }
 #mange-setect {
     list-style-type: disc !important;
-    margin-left: 48px;
+    margin-left: 34px;
     display: none;
 }
 .mt-06{
@@ -303,4 +309,75 @@ footer{
 #manage-main {
     cursor: pointer;
   
+}
+#profile-menu {
+    box-shadow: 0px 2px 6px 0px #0808089e;
+    width: 200px;
+    margin-left: -104px;
+    position: absolute;
+    z-index: 999999;
+    background-color: #fff;
+    display: none;
+    top: 28px;
+   
+}   
+#profile-menu:before {
+    content: "\f0d8";
+    position: absolute;
+    top: -26px;
+    font-size: 28px;
+    right: 19px;
+    color: #fff;
+    height: 0px;
+    font-family: FontAwesome;
+}
+#profile-menu li {
+    padding: 4px 10px;
+    list-style: none;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+#profile-menu li:last-child{
+    border:none;
+}
+
+#sitting-btn{
+    cursor: pointer;
+}
+
+#mange-setect a {
+    width: 100%;
+    float: left;
+    position: absolute;
+    left: 6px;
+    margin-top: -17px;
+    font-size: 12px;
+    background: transparent;
+    color: #9b9b9b;
+}
+
+#mange-setect li {
+    width: 5px;
+    height: 5px;
+    text-align: center;
+    border-radius: 1em;
+    background: #211e1e;
+    margin: 15px 0;
+    color: white;
+    position: relative;
+}
+#mange-setect li:first-child {
+    margin-top: 9px;
+}
+#mange-setect a:hover , #profile-menu a:hover, .menu a:hover{
+    color: #55d1f5 !important;
+    text-decoration: none;
+}
+
+.menu img {
+    width: 25px;
+}
+.learn-img, .report-img {
+    width: 20px !important;
+    margin-right: 4px;
 }
